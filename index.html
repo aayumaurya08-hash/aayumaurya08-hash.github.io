@@ -8,10 +8,51 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
-  <!-- Icons -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:#0a0a0a; color:#fff; font-family:'Inter',sans-serif; line-height:1.7; }
+
+    nav { display:flex; justify-content:space-between; padding:22px 60px; }
+    nav .logo { font-weight:600; letter-spacing:1px; }
+    nav ul { display:flex; list-style:none; }
+    nav ul li { margin-left:28px; }
+    nav ul li a { color:#fff; text-decoration:none; opacity:0.8; }
+    nav ul li a:hover { opacity:1; }
+
+    .hero { text-align:center; padding:120px 20px 90px; }
+    .hero h1 { font-family:'Playfair Display', serif; font-size:56px; letter-spacing:1px; }
+    .hero h1 span { color:#00ffd5; }
+    .hero h2 { margin-top:10px; font-weight:400; color:#00ffd5; }
+    .hero p { max-width:600px; margin:25px auto 0; opacity:0.85; }
+
+    .section { max-width:900px; margin:auto; padding:80px 20px; text-align:center; }
+    .section h3 { font-size:28px; margin-bottom:20px; color:#00ffd5; }
+    .section p { opacity:0.85; }
+    .muted { opacity:0.7; }
+
+    .skills-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:24px; margin-top:40px; }
+    .skill { background:#111; padding:24px; border-radius:14px; transition:transform 0.3s, box-shadow 0.3s; }
+    .skill i { font-size:30px; color:#00ffd5; }
+    .skill span { display:block; margin-top:12px; font-size:14px; }
+    .skill:hover { transform:translateY(-6px); box-shadow:0 0 20px #00ffd520; }
+
+    .infinity { display:flex; justify-content:center; align-items:center; gap:28px; margin-top:40px; }
+    .loop span { display:block; background:#111; padding:10px 18px; border-radius:20px; margin:10px 0; font-size:14px; }
+    .symbol { font-size:64px; color:#00ffd5; animation:pulse 2s infinite; }
+    @keyframes pulse { 0%{opacity:0.4;}50%{opacity:1;}100%{opacity:0.4;} }
+
+    .social-links { margin-top:30px; }
+    .social-links a { font-size:26px; margin:0 14px; color:#fff; opacity:0.8; }
+    .social-links a:hover { opacity:1; }
+    .social-links a:hover .fa-instagram { color:#E1306C; }
+    .social-links a:hover .fa-envelope { color:#1DA1F2; }
+    .social-links a:hover .fa-github { color:#fff; }
+
+    footer { text-align:center; padding:30px; opacity:0.6; font-size:14px; }
+  </style>
 </head>
 <body>
 
@@ -30,31 +71,24 @@
   <section class="hero">
     <h1><span>Aayu</span> Maurya</h1>
     <h2>DevOps Engineer</h2>
-    <p>
-      Designing reliable cloud infrastructure, automating workflows
-      and building scalable CI/CD pipelines.
-    </p>
+    <p>Designing reliable cloud infrastructure, automating workflows and building scalable CI/CD pipelines.</p>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section">
     <h3>About Me</h3>
     <p>
-      I am a DevOps Engineer with a strong passion for automation,
-      cloud infrastructure and system reliability.
+      I am a DevOps Engineer with a strong passion for automation, cloud infrastructure and system reliability.
       <br><br>
-      I focus on building clean CI/CD pipelines, containerized platforms
-      and scalable systems using Linux and modern DevOps tools.
+      I focus on building clean CI/CD pipelines, containerized platforms and scalable systems using Linux and modern DevOps tools.
       <br><br>
-      I believe great DevOps is about simplicity, consistency and
-      continuous improvement.
+      I believe great DevOps is about simplicity, consistency and continuous improvement.
     </p>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="section">
     <h3>DevOps Stack</h3>
-
     <div class="skills-grid">
       <div class="skill"><i class="fab fa-linux"></i><span>Linux</span></div>
       <div class="skill"><i class="fab fa-docker"></i><span>Docker</span></div>
@@ -70,33 +104,25 @@
   <!-- LIFECYCLE -->
   <section id="lifecycle" class="section">
     <h3>DevOps Lifecycle</h3>
-
     <div class="infinity">
       <div class="loop">
         <span>Plan</span>
         <span>Code</span>
         <span>Build</span>
       </div>
-
       <div class="symbol">∞</div>
-
       <div class="loop">
         <span>Test</span>
         <span>Deploy</span>
         <span>Monitor</span>
       </div>
     </div>
-
-    <p class="muted">
-      DevOps is a continuous loop of automation, monitoring
-      and improvement.
-    </p>
+    <p class="muted">DevOps is a continuous loop of automation, monitoring and improvement.</p>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section">
     <h3>Contact</h3>
-
     <div class="social-links">
       <a href="https://instagram.com/theaayuu_" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="mailto:yourgmail@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -108,6 +134,8 @@
     <p>© 2026 Aayu Maurya · DevOps Engineer</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    console.log("Aayu Maurya · Aesthetic DevOps Portfolio Loaded 🚀");
+  </script>
 </body>
-        </html>
+  </html>
