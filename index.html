@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aayu Maurya | DevOps Engineer</title>
+  <meta charset="UTF-8">
+  <title>Aayu Maurya | DevOps Engineer</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-<!-- External CSS -->
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAVBAR -->
 <nav>
-  <div class="logo">Home</div>
+  <div class="logo">Aayu</div>
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#lifecycle">Lifecycle</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<!-- HOME HERO -->
-<section id="home">
-  <h1>Aayu Maurya</h1>
-  <h2>I'm DevOps Engineer</h2>
-  <p>Building scalable cloud infrastructure, automating pipelines, and mastering DevOps tools daily to deliver excellence.</p>
+<!-- HOME -->
+<section id="home" class="section hero">
+  <div class="hero-left">
+    <h1>Aayu Maurya</h1>
+    <h2 id="typing"></h2>
+    <p>
+      DevOps Engineer focused on automation, cloud infrastructure
+      and continuous learning to build reliable systems.
+    </p>
+  </div>
+
+  <div class="hero-right">
+    <i class="fab fa-docker"></i>
+    <i class="fab fa-aws"></i>
+    <i class="fab fa-linux"></i>
+    <i class="fab fa-git-alt"></i>
+    <i class="fas fa-network-wired"></i>
+  </div>
+</section>
+
+<!-- TERMINAL -->
+<section class="terminal-section">
+  <pre id="terminal"></pre>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="section">
   <h3>About Me</h3>
-  <p>Hi, I'm <strong>Aayu Maurya</strong>, a passionate <strong>DevOps Engineer</strong>. I love exploring cloud technologies, automation, and CI/CD pipelines. I constantly learn new tools and skills every day to stay at the forefront of DevOps. My goal is to simplify complex systems and create efficient, reliable infrastructures.</p>
+  <p>
+    My name is <b>Aayu Maurya</b>, a DevOps Engineer passionate about
+    building scalable systems, automating workflows, and learning
+    modern cloud technologies every day to deliver better solutions.
+  </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
-  <h3>My Skills</h3>
+<section id="skills" class="section">
+  <h3>Skills</h3>
+
   <div class="skills-grid">
     <div class="skill"><i class="fab fa-linux"></i><span>Linux</span></div>
+    <div class="skill"><i class="fab fa-git-alt"></i><span>Git</span></div>
+    <div class="skill"><i class="fab fa-github"></i><span>GitHub</span></div>
     <div class="skill"><i class="fab fa-docker"></i><span>Docker</span></div>
-    <div class="skill"><i class="fas fa-network-wired"></i><span>Kubernetes</span></div>
+    <div class="skill"><i class="fas fa-cubes"></i><span>Kubernetes</span></div>
     <div class="skill"><i class="fab fa-aws"></i><span>AWS</span></div>
-    <div class="skill"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
-    <div class="skill"><i class="fas fa-code"></i><span>Bash</span></div>
-    <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
     <div class="skill"><i class="fas fa-infinity"></i><span>CI/CD</span></div>
-    <div class="skill"><i class="fas fa-cubes"></i><span>Terraform</span></div>
+    <div class="skill"><i class="fas fa-terminal"></i><span>Bash</span></div>
+    <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
+    <div class="skill"><i class="fas fa-chart-line"></i><span>Monitoring</span></div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
-  <h3>Projects</h3>
-  <div class="projects-grid">
-    <div class="project"><h4>CI/CD Pipeline</h4><p>Automated build, test, and deploy for microservices.</p></div>
-    <div class="project"><h4>Cloud Infrastructure</h4><p>Terraform scripts to provision scalable AWS infrastructure.</p></div>
-    <div class="project"><h4>Containerized Apps</h4><p>Dockerized apps deployed on Kubernetes clusters with automation.</p></div>
+<section id="projects" class="section">
+  <h3>DevOps Workflow</h3>
+  <div class="flow">
+    GitHub → Jenkins → Docker → Kubernetes → AWS → Monitoring
   </div>
-</section>
-
-<!-- LIFECYCLE -->
-<section id="lifecycle">
-  <h3>DevOps Lifecycle</h3>
-  <div class="infinity">
-    <div class="loop"><span>Plan</span><span>Code</span><span>Build</span></div>
-    <div class="symbol">∞</div>
-    <div class="loop"><span>Test</span><span>Deploy</span><span>Monitor</span></div>
-  </div>
-  <p class="muted">DevOps is a continuous loop of automation, monitoring, and improvement.</p>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <h3>Contact Me</h3>
-  <div class="social-links">
-    <a href="https://instagram.com/theaayuu_" target="_blank"><i class="fab fa-instagram"></i></a>
+<section id="contact" class="section">
+  <h3>Contact</h3>
+  <div class="contact-icons">
     <a href="mailto:aayumaurya08@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://instagram.com/theaayuu_" target="_blank"><i class="fab fa-instagram"></i></a>
     <a href="https://github.com/aayumaurya08-hash" target="_blank"><i class="fab fa-github"></i></a>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Aayu Maurya · DevOps Engineer</p>
+  © 2026 Aayu Maurya · DevOps Engineer
 </footer>
 
-<!-- External JS -->
 <script src="script.js"></script>
 </body>
-  </html>
+                         </html>
