@@ -1,65 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #e5e7eb;
+  background: #0f172a;
+  color: #e5e7eb;
 }
 
+/* HERO */
 .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, #1e293b, #020617);
-    text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
 }
 
-.hero h1 {
-    font-size: 3rem;
+.hero-text h1 {
+  font-size: 60px;
+  color: #38bdf8;
 }
 
-.hero span {
-    color: #38bdf8;
+.hero-text h2 {
+  font-size: 32px;
+  margin-top: 10px;
 }
 
-.btn {
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: #38bdf8;
-    color: black;
-    text-decoration: none;
-    border-radius: 30px;
+.hero-text span {
+  color: #22c55e;
 }
 
-section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
+.hero-text p {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 500px;
+  color: #cbd5f5;
 }
 
-.skills .skill-box span {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 18px;
-    background: #1e293b;
-    border-radius: 20px;
+/* SKILLS */
+.skills {
+  padding: 80px 10%;
+  background: #020617;
 }
 
-.projects .project {
-    background: #020617;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.skills h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #38bdf8;
 }
 
-.projects a {
-    color: #38bdf8;
-    text-decoration: none;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
+.skill-card {
+  background: #0f172a;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: 0.3s;
+  border: 1px solid #1e293b;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: #020617;
+  border-color: #22c55e;
+}
+
+/* FOOTER */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
+  padding: 20px;
+  text-align: center;
+  background: #020617;
+  color: #94a3b8;
 }
